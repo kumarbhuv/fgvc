@@ -1,4 +1,4 @@
-# Fine Grained Image Classification using knowledge distillation
+# Fine Grained Image Classification : A study using CNN architectures and Transformers
 ## Datasets
 We have used the following four fine grained image datasets:
 1. CUB-200
