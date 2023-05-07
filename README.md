@@ -62,7 +62,7 @@ The models are trained with data augmentation techniques to improve their genera
  - torchvision
 
 
-##Citation
+## Citation
 @techreport{maji13fine-grained,
    title         = {Fine-Grained Visual Classification of Aircraft},
    author        = {S. Maji and J. Kannala and E. Rahtu
