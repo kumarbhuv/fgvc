@@ -55,7 +55,7 @@ The models are trained with data augmentation techniques to improve their genera
 
 
 ### Acknowledgement
-This code repo is forked and modified from the official [ConvNext repositry](https://github.com/facebookresearch/ConvNeXt) and [Training data-efficient image transformers & distillation through attention] (https://github.com/facebookresearch/deit)
+This code repo is forked and modified from <!--the official [ConvNext repositry](https://github.com/facebookresearch/ConvNeXt) and -->[Training data-efficient image transformers & distillation through attention](https://github.com/facebookresearch/deit)
 
 ## References
 1. Hinton, Geoffrey and Vinyals, Oriol and Dean, Jeff (2015). Distilling the knowledge in a neural network. arXiv preprint arXiv:1503.02531.
