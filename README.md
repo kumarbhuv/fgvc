@@ -28,7 +28,8 @@ We have tested this code on Ubuntu 20.04 LTS with Python 3.8. The other requirem
 ## Training and Evaluation
 <!--The repository provides code for both fine-tuning and knowledge distillation:-->
 To train and evaluate the code in a single run, execute 
-`python models/train_dataset.py`
+`python models/train_dataset.py` <br> 
+For example, to work with FGVC-Aircraft classification execute `python models/train_aircraft.py`
 
 
 <!--### Fine-Tuning
