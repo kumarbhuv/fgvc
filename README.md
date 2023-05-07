@@ -1,38 +1,31 @@
-# Fine Grained Image Classification
-Fine grained vision classification (Convnext, Vit and Swin) on Cub-200, fgvc-aircraft, stanford-dogs and foodx-251
-
+# Fine Grained Image Classification using knowledge distillation
 ## Datasets
-This study involves the four fine grained image datasets
-1. CUB-200: Caltech-UCSD Birds-200-2011 dataset
-2. FGVC-Aircraft: FGVCAircraft dataset
-3. Stanford Dogs: Stanford Dogs dataset
-4. FoodX-251: FoodX-251 dataset
-
+We have used the following four fine grained image datasets:
+1. CUB-200
+2. FGVC-Aircraft
+3. Stanford Dogs
+4. FoodX-251
 
  ## Models
-The repository provides pre-trained models for convolutional neural networks (ConvNets), Vision Transformers (ViT), and Swin Transformers trained on the specified datasets. The gvc/models/model.py file provides the implementation of the models, and the gvc/utils/configs.py file contains the configuration parameters for each model.
+We have fine tuned the following pre-trained models on our dataset.
+1. ConvNext - Tiny, Base & Large variants
+2. Vision Transformer - Base & Large variants
+3. Data efficient image Transformer
+4. Swin Transformer - Base & Large variants
+ 
+The configuration parameters for the models are given in ./utils/configs.py.
 
-### ConvNets
-The following ConvNets are provided:
-
-convnext_tiny: a tiny ConvNet architecture for CUB-200, with 768 output features in the classifier.
-convnext_base: a larger ConvNet architecture for CUB-200, with 1024 output features in the classifier.
-convnext_large: a very large ConvNet architecture for CUB-200, with 1536 output features in the classifier.
-
-### Vision Transformers (ViT)
-The following ViT models are provided:
-
-vit_b_16: a ViT base architecture for CUB-200, with 768 output features in the head.
-vit_l_16: a ViT large architecture for CUB-200, with 1024 output features in the head.
-
-### Swin Transformers
-The following Swin Transformers are provided:
-
-swin_t: a Swin Transformer architecture for CUB-200, with 768 or 1024 output features in the head.
+ ## Knowledge Distillation
+We adopt the approach of knowledge distillation to improve the performance of student model by transferring the knowledge from teacher model. The architecture of knowledge distillation is shown as follows.
+![Knowledge-Distillation_3](https://user-images.githubusercontent.com/113207800/236699344-a24d8353-7240-4ebe-a9fb-d62f006b2b60.png)
 
 
 ## Training and Evaluation
-The repository provides code for both fine-tuning and knowledge distillation:
+<!--The repository provides code for both fine-tuning and knowledge distillation:
+For training, execute 
+'python models/train_dataset.py'
+For evaluation, execute
+'python models/Kfold.py
 
 ### Fine-Tuning
 The fine-tuning code allows for the training of the convolutional neural networks (ConvNets), Vision Transformers (ViT), and Swin Transformers on the specified dataset.
