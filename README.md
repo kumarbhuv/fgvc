@@ -23,11 +23,11 @@ We adopt the approach of knowledge distillation to improve the performance of st
 ## Training and Evaluation
 <!--The repository provides code for both fine-tuning and knowledge distillation:-->
 For training, execute 
-`python models/train_dataset.py`
-For evaluation, execute
+`python models/train_dataset.py`<br>
+For evaluation, execute 
 `python models/Kfold.py`
 
-### Fine-Tuning
+<!--### Fine-Tuning
 The fine-tuning code allows for the training of the convolutional neural networks (ConvNets), Vision Transformers (ViT), and Swin Transformers on the specified dataset.
 
 ### Kfold Cross Validation
@@ -46,7 +46,7 @@ The models are trained with data augmentation techniques to improve their genera
 4. Resize to 256 x 256
 5. Center crop to 224 x 224
 6. To tensor
-7. Normalize with mean (0.485, 0.456, 0.406) and standard deviation (0.229, 0.224, 0.225)
+7. Normalize with mean (0.485, 0.456, 0.406) and standard deviation (0.229, 0.224, 0.225)-->
 
 
 ## Requirements
@@ -54,22 +54,6 @@ The models are trained with data augmentation techniques to improve their genera
  - PyTorch
  - torchvision
 
-
-## Citation
-@techreport{maji13fine-grained,
-   title         = {Fine-Grained Visual Classification of Aircraft},
-   author        = {S. Maji and J. Kannala and E. Rahtu
-                    and M. Blaschko and A. Vedaldi},
-   year          = {2013},
-   archivePrefix = {arXiv},
-   eprint        = {1306.5151},
-   primaryClass  = "cs-cv",
-}
-
-@techreport{WahCUB_200_2011,
-	Title = ,
-	Author = {Wah, C. and Branson, S. and Welinder, P. and Perona, P. and Belongie, S.},
-	Year = {2011}
-	Institution = {California Institute of Technology},
-	Number = {CNS-TR-2011-001}
-}
+## References
+1. Hinton, Geoffrey and Vinyals, Oriol and Dean, Jeff (2015). Distilling the knowledge in a neural network. arXiv preprint arXiv:1503.02531.
+2. Touvron, Hugo and Cord, Matthieu and Douze, Matthijs and Massa, Francisco and Sablayrolles, Alexandre and J (2021). Training data-efficient image transformers & distillation through attention. In International conference on machine learning (pp. 10347--10357).
