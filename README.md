@@ -23,9 +23,9 @@ We adopt the approach of knowledge distillation to improve the performance of st
 ## Training and Evaluation
 <!--The repository provides code for both fine-tuning and knowledge distillation:-->
 For training, execute 
-'python models/train_dataset.py'
+`python models/train_dataset.py`
 For evaluation, execute
-'python models/Kfold.py
+`python models/Kfold.py`
 
 ### Fine-Tuning
 The fine-tuning code allows for the training of the convolutional neural networks (ConvNets), Vision Transformers (ViT), and Swin Transformers on the specified dataset.
