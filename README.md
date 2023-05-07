@@ -3,10 +3,10 @@ Fine grained vision classification (Convnext, Vit and Swin) on Cub-200, fgvc-air
 
 ## Datasets
 This study involves the four fine grained image datasets
-CUB-200: Caltech-UCSD Birds-200-2011 dataset
-FGVC-Aircraft: FGVCAircraft dataset
-Stanford Dogs: Stanford Dogs dataset
-FoodX-251: FoodX-251 dataset
+1. CUB-200: Caltech-UCSD Birds-200-2011 dataset
+2. FGVC-Aircraft: FGVCAircraft dataset
+3. Stanford Dogs: Stanford Dogs dataset
+4. FoodX-251: FoodX-251 dataset
 
 
  ## Models
@@ -47,18 +47,19 @@ The knowledge distillation code allows for the transfer of knowledge from a pre-
 ### Data Augmentation
 The models are trained with data augmentation techniques to improve their generalization performance. The following transformations are applied to the images during training:
 
-Random horizontal flip
-Random rotation
-Random autocontrast
-Resize to 256 x 256
-Center crop to 224 x 224
-To tensor
-Normalize with mean (0.485, 0.456, 0.406) and standard deviation (0.229, 0.224, 0.225)
+1. Random horizontal flip
+2. Random rotation
+3. Random autocontrast
+4. Resize to 256 x 256
+5. Center crop to 224 x 224
+6. To tensor
+7. Normalize with mean (0.485, 0.456, 0.406) and standard deviation (0.229, 0.224, 0.225)
+
 
 ## Requirements
-Python 3
-PyTorch
-torchvision
+ - Python 3
+ - PyTorch
+ - torchvision
 
 
 ##Citation
@@ -70,4 +71,12 @@ torchvision
    archivePrefix = {arXiv},
    eprint        = {1306.5151},
    primaryClass  = "cs-cv",
+}
+
+@techreport{WahCUB_200_2011,
+	Title = ,
+	Author = {Wah, C. and Branson, S. and Welinder, P. and Perona, P. and Belongie, S.},
+	Year = {2011}
+	Institution = {California Institute of Technology},
+	Number = {CNS-TR-2011-001}
 }
