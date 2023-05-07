@@ -20,6 +20,11 @@ We adopt the approach of knowledge distillation to improve the performance of st
 ![Knowledge-Distillation_3](https://user-images.githubusercontent.com/113207800/236699344-a24d8353-7240-4ebe-a9fb-d62f006b2b60.png)
 
 
+## Requirements 
+We have tested this code on Ubuntu 20.04 LTS with Python 3.8. The other requirements are <br>
+ - PyTorch
+ - torchvision
+ 
 ## Training and Evaluation
 <!--The repository provides code for both fine-tuning and knowledge distillation:-->
 For training, execute 
@@ -49,10 +54,8 @@ The models are trained with data augmentation techniques to improve their genera
 7. Normalize with mean (0.485, 0.456, 0.406) and standard deviation (0.229, 0.224, 0.225)-->
 
 
-## Requirements
- - Python 3
- - PyTorch
- - torchvision
+### Acknowledgement
+This code repo is forked and modified from the official [ConvNext repositry](https://github.com/facebookresearch/ConvNeXt) and [Training data-efficient image transformers & distillation through attention] (https://github.com/facebookresearch/deit)
 
 ## References
 1. Hinton, Geoffrey and Vinyals, Oriol and Dean, Jeff (2015). Distilling the knowledge in a neural network. arXiv preprint arXiv:1503.02531.
