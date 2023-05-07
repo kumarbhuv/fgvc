@@ -27,10 +27,9 @@ We have tested this code on Ubuntu 20.04 LTS with Python 3.8. The other requirem
  
 ## Training and Evaluation
 <!--The repository provides code for both fine-tuning and knowledge distillation:-->
-For training, execute 
-`python models/train_dataset.py`<br>
-For evaluation, execute 
-`python models/Kfold.py`
+To train and evaluate the code in a single run, execute 
+`python models/train_dataset.py`
+
 
 <!--### Fine-Tuning
 The fine-tuning code allows for the training of the convolutional neural networks (ConvNets), Vision Transformers (ViT), and Swin Transformers on the specified dataset.
