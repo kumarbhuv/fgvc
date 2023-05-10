@@ -1,10 +1,4 @@
 # Fine Grained Image Classification : A study using CNN architectures and Transformers
-## Datasets
-We have used the following four fine grained image datasets:
-1. CUB-200
-2. FGVC-Aircraft
-3. Stanford Dogs
-4. FoodX-251
 
  ## Datasets
 The instructions to download and install FGVC datasets is given below:-
