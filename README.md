@@ -87,7 +87,7 @@ FoodX_dataset_root_folder/
 We have fine tuned the following pre-trained models on our dataset.
 1. ConvNext - Tiny, Base & Large variants
 2. Vision Transformer - Base & Large variants
-3. Swin Transformer - Tiny & Base variants
+3. Swin Transformer - Base variant
  
 The configuration parameters for the models are given in ./utils/configs.py.
 
