@@ -118,8 +118,8 @@ The models are trained with data augmentation techniques to improve their genera
 6. To tensor
 7. Normalize with mean (0.485, 0.456, 0.406) and standard deviation (0.229, 0.224, 0.225)
 
-# Learning with Knowledge Distillation for Fine Grained Image Classification 
-This repository is forked from https://github.com/MUKhattak/DeiT_ConvNeXt_KnowledgeDistillation.git repo and changes has been made to implement knowledge distillation with swin transformer base model as teacher model and convnext as student model.
+# Knowledge Distillation for Fine Grained Image Classification 
+We forked https://github.com/MUKhattak/DeiT_ConvNeXt_KnowledgeDistillation.git repo and changes has been made to implement knowledge distillation with swin-base transformer as teacher model and convnext-base as student model.
 
 ## Training and Evaluation 
 
