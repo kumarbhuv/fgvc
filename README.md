@@ -101,7 +101,7 @@ We have tested this code on Windows 10 with Python 3.9. The other requirements a
 The repository provides code for both fine-tuning and knowledge distillation:<br>
 To train and evaluate individual models, execute 
 `python models/train_(dataset).py` <br> 
-For example, to work with FGVC-Aircraft classification execute `python models/train_aircraft.py`-->
+For example, to work with FGVC-Aircraft classification execute `python models/train_aircraft.py`
 
 ### Kfold Cross Validation
 The Kfold.py file provides code for running 5-fold cross validation on the dataset to evaluate model performance. The code allows for specifying the number of epochs and the optimizer used for training.
