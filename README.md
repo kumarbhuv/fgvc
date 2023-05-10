@@ -96,12 +96,12 @@ We have tested this code on Windows 10 with Python 3.9. The other requirements a
  - PyTorch
  - torchvision
  
-## Training and Evaluation
+<!--## Training and Evaluation
 
-<!--The repository provides code for both fine-tuning and knowledge distillation:-->
+The repository provides code for both fine-tuning and knowledge distillation:
 To train and evaluate the code in a single run, execute 
 `python models/train_(dataset).py` <br> 
-For example, to work with FGVC-Aircraft classification execute `python models/train_aircraft.py`
+For example, to work with FGVC-Aircraft classification execute `python models/train_aircraft.py`-->
 
 ### Kfold Cross Validation
 The Kfold.py file provides code for running 5-fold cross validation on the dataset to evaluate model performance. The code allows for specifying the number of epochs and the optimizer used for training.
