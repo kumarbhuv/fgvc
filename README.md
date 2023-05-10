@@ -120,3 +120,20 @@ The models are trained with data augmentation techniques to improve their genera
 5. Center crop to 224 x 224
 6. To tensor
 7. Normalize with mean (0.485, 0.456, 0.406) and standard deviation (0.229, 0.224, 0.225)
+
+# Learning with Knowledge Distillation for Fine Grained Image Classification 
+This repository is forked from https://github.com/MUKhattak/DeiT_ConvNeXt_KnowledgeDistillation.git repo and changes has been made to implement knowledge distillation with swin transformer base model as teacher model and convnext as student model.
+
+## Training and Evaluation 
+
+To finetune ConvNext model on CUB dataset, run the following command 
+
+  ```bash
+ $ python main.py --model convnext_base --drop-path 0.8 --input-size 384 --batch-size 16 --lr 5e-5 --warmup-epochs 0 --epochs 60 --weight-decay 1e-8 --cutmix 0 --mixup 0 --data-set CUB --data-path /path/to/dataset/root/folder --output_dir ./output/path --finetune /path/to/imagenet1k/pretrained/deit/weights.pth/
+```
+
+To further finetune ConvNext model (already finetuned on CUB dataset) using Knowledge Distillation from Swin Transformer Base teacher model, run the following commad:
+
+  ```bash
+ $ python main.py --model convnext_base_distilled --distillation-type hard --teacher-model swin_transformer_base --drop-path 0.8 --input-size 384 --batch-size 16 --lr 5e-5 --warmup-epochs 0 --epochs 60 --weight-decay 1e-8 --cutmix 0 --mixup 0 --data-set CUB --data-path /path/to/dataset/root/folder --output_dir /path/to/save/output/files --finetune /path/of/swin/CUB_finetuned/weights 
+```
