@@ -98,7 +98,7 @@ We have tested this code on Windows 10 with Python 3.9. The other requirements a
  
 ## Training and Evaluation
 
-The repository provides code for both fine-tuning and knowledge distillation:
+The repository provides code for both fine-tuning and knowledge distillation:<br>
 To train and evaluate individual models, execute 
 `python models/train_(dataset).py` <br> 
 For example, to work with FGVC-Aircraft classification execute `python models/train_aircraft.py`-->
