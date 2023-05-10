@@ -1,4 +1,6 @@
 # Fine Grained Image Classification : A study using CNN architectures and Transformers
+Fine grained Image Classification (FGIC) is one of the challenging tasks in Computer Vision. Many recent methodologies including Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs) have tried to solve this problem. In this study, we introduce a teacher-student strategy specific to ConvNext model and show the effectiveness of using CNNs and transformers combined together
+to produce state of the art results on challenging FGIC datasets. We show that by using ConvNext-base as a student model and swin-base transformer as teacher model in knowledge distillation settings, we achieve the highest accuracy of 86.9% on FGVC-Aircraft dataset and the least accuracy of 81.37% on a more challenging dataset named FoodX-251.
 
  ## Datasets
 The instructions to download and install FGVC datasets is given below:-
