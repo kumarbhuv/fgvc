@@ -64,7 +64,7 @@ dog_dataset_root_folder/
 
 <b> FoodX Dataset </b>
 
-FoodX-251 contains 251 food categories with a total of 310,000 images, making it one of the largest fgvc datasets present out there. the dataset can be downloaded from [here](https://github.com/karansikka1/iFood_2019). 
+FoodX-251 contains 251 food categories with a total of 158,000 images, making it one of the largest fgvc datasets present out there. the dataset can be downloaded from [here](https://github.com/karansikka1/iFood_2019). 
 The dataset folder should have the following structure:
 
 ```
