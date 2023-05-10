@@ -97,7 +97,7 @@ We have tested this code on Windows 10 with Python 3.9. The other requirements a
  - torchvision
  
 ## Training and Evaluation
-### Fine Tuning
+
 <!--The repository provides code for both fine-tuning and knowledge distillation:-->
 To train and evaluate the code in a single run, execute 
 `python models/train_(dataset).py` <br> 
