@@ -1,10 +1,6 @@
 # Fine Grained Image Classification : A study using CNN architectures and Transformers
-## Datasets
-We have used the following four fine grained image datasets:
-1. CUB-200
-2. FGVC-Aircraft
-3. Stanford Dogs
-4. FoodX-251
+Fine grained Image Classification (FGIC) is one of the challenging tasks in Computer Vision. Many recent methodologies including Convolutional Neural Networks (CNNs) and Vision Transformers (ViTs) have tried to solve this problem. In this study, we introduce a teacher-student strategy specific to ConvNext model and show the effectiveness of using CNNs and transformers combined together
+to produce state of the art results on challenging FGIC datasets. We show that by using ConvNext-base as a student model and swin-base transformer as teacher model in knowledge distillation settings, we achieve the highest accuracy of 86.9% on FGVC-Aircraft dataset and the least accuracy of 81.37% on a more challenging dataset named FoodX-251.
 
  ## Datasets
 The instructions to download and install FGVC datasets is given below:-
@@ -91,7 +87,7 @@ FoodX_dataset_root_folder/
 We have fine tuned the following pre-trained models on our dataset.
 1. ConvNext - Tiny, Base & Large variants
 2. Vision Transformer - Base & Large variants
-3. Swin Transformer - Base & Large variants
+3. Swin Transformer - Base variant
  
 The configuration parameters for the models are given in ./utils/configs.py.
 
@@ -101,6 +97,7 @@ We have tested this code on Windows 10 with Python 3.9. The other requirements a
  - torchvision
  
 ## Training and Evaluation
+
 <!--The repository provides code for both fine-tuning and knowledge distillation:-->
 To train and evaluate the code in a single run, execute 
 `python models/train_(dataset).py` <br> 
@@ -121,8 +118,8 @@ The models are trained with data augmentation techniques to improve their genera
 6. To tensor
 7. Normalize with mean (0.485, 0.456, 0.406) and standard deviation (0.229, 0.224, 0.225)
 
-# Learning with Knowledge Distillation for Fine Grained Image Classification 
-This repository is forked from https://github.com/MUKhattak/DeiT_ConvNeXt_KnowledgeDistillation.git repo and changes has been made to implement knowledge distillation with swin transformer base model as teacher model and convnext as student model.
+# Knowledge Distillation for Fine Grained Image Classification 
+We forked https://github.com/MUKhattak/DeiT_ConvNeXt_KnowledgeDistillation.git repo and changes has been made to implement knowledge distillation with swin-base transformer as teacher model and convnext-base as student model.
 
 ## Training and Evaluation 
 
