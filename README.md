@@ -96,10 +96,10 @@ We have tested this code on Windows 10 with Python 3.9. The other requirements a
  - PyTorch
  - torchvision
  
-<!--## Training and Evaluation
+## Training and Evaluation
 
 The repository provides code for both fine-tuning and knowledge distillation:
-To train and evaluate the code in a single run, execute 
+To train and evaluate individual models, execute 
 `python models/train_(dataset).py` <br> 
 For example, to work with FGVC-Aircraft classification execute `python models/train_aircraft.py`-->
 
